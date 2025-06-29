@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "lib": ["esnext", "dom"],
+    "declaration": true,
+    "target": "ES2017",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+        "@apps/*": ["apps/*"],
+        "@kothi/core": ["packages/core/src"],
+        "@kothi/plugins/*": ["packages/plugins/*/src"],
+        "@kothi/types": ["packages/types/src"],
+        "@kothi/shared": ["packages/shared/src"]
+    }
+  }
+}

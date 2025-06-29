@@ -1,0 +1,33 @@
+{
+  "name": "kothi",
+  "version": "1.0.0",
+  "description": "Modular, API-first, event-driven backend framework for modern restaurants",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "clean": "turbo clean",
+    "type-check": "turbo type-check",
+    "api:dev": "pnpm --filter api start:dev",
+    "api:build": "pnpm --filter api build",
+    "core:build": "pnpm --filter @kothi/core build",
+    "shared:build": "pnpm --filter @kothi/shared build",
+    "kothi": "pnpm --filter @kothi/cli kothi"
+  },
+  "keywords": [
+    "restaurant",
+    "pos",
+    "backend",
+    "framework",
+    "nestjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf",
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  }
+}
